@@ -4,6 +4,28 @@ turf-remove
 
 Removes any features from a feature collection that match a property value.
 
+###Install
+
+```sh
+npm install turf-remove
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|fc|A FeatureCollection|
+|property|Property to check|
+|value|Value for features to remove|
+
+###Usage
+
+```js
+remove(fc, property, value)
+```
+
+###Example
+
 ```js
 var remove = require('turf-remove')
 var point = require('turf-point')
