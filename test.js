@@ -1,7 +1,7 @@
-var test = require('tape')
-var remove = require('./')
-var featureCollection = require('turf-featurecollection')
-var point = require('turf-point')
+var test = require('tape');
+var remove = require('./');
+var featureCollection = require('turf-featurecollection');
+var point = require('turf-point');
 
 test('remove', function(t){
   var points = featureCollection(
@@ -10,14 +10,14 @@ test('remove', function(t){
     point(3,1, {team: 'Nationals'}), 
     point(2,2, {team: 'Yankees'}), 
     point(2,3, {team: 'Red Sox'}), 
-    point(4,2, {team: 'Yankees'})])
+    point(4,2, {team: 'Yankees'})]);
   
-  newFC = remove(points, 'team', 'Yankees')
+  newFC = remove(points, 'team', 'Yankees');
 
-  t.equal(newFC.features.length, 3, 'should leave 3 features')
+  t.equal(newFC.features.length, 3, 'should leave 3 features');
   newFC.features.forEach(function(f){
-    t.false(f.properties.team === 'Yankees')
-  })
+    t.false(f.properties.team === 'Yankees');
+  });
 
-  t.end()
+  t.end();
 });
