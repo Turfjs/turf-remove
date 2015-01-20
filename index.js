@@ -1,7 +1,9 @@
 var featureCollection = require('turf-featurecollection');
 
 /**
- * Filter a FeatureCollection by a desired property key-value combination.
+ * Takes a FeatureCollection, a property, and a value and
+ * returns a FeatureCollection with features matching that
+ * property-value pair removed.
  *
  * @module turf/remove
  * @param {FeatureCollection} features
