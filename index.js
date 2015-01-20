@@ -6,10 +6,10 @@ var featureCollection = require('turf-featurecollection');
  * property-value pair removed.
  *
  * @module turf/remove
- * @param {FeatureCollection} features
- * @param {string} key the key in a feature's properties property
- * @param {string} value the desired value of that property
- * @return {FeatureCollection} a filtered collection with only features that don't match.
+ * @param {FeatureCollection} features a FeatureCollection of any type
+ * @param {String} property the property to filter
+ * @param {String} value the value to filter
+ * @return {FeatureCollection} the resulting FeatureCollection without features that match the property-value pair
  * @example
  * var trees = turf.featurecollection([
  *  turf.point(1,2, {species: 'oak'}),
