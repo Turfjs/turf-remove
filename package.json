@@ -9,14 +9,17 @@
   "devDependencies": {
     "benchmark": "^1.0.0",
     "tape": "^3.0.3",
-    "turf-point": "^1.2.0"
+    "turf-point": "^2.0.0",
+    "dox": "^0.6.1",
+    "doxme": "^1.4.2"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "doc": "dox -r < index.js | doxme --readme > README.md"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/morganherlocker/turf-remove.git"
+    "url": "https://github.com/Turfjs/turf-remove.git"
   },
   "keywords": [
     "geojson",
@@ -28,7 +31,7 @@
   "author": "morganherlocker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/morganherlocker/turf-remove/issues"
+    "url": "https://github.com/Turfjs/turf-remove/issues"
   },
-  "homepage": "https://github.com/morganherlocker/turf-remove"
+  "homepage": "https://github.com/Turfjs/turf-remove"
 }
