@@ -1,7 +1,7 @@
 var featureCollection = require('turf-featurecollection');
 
 /**
- * Takes a FeatureCollection, a property, and a value and
+ * Takes a {@link FeatureCollection} of any type, a property, and a value and
  * returns a FeatureCollection with features matching that
  * property-value pair removed.
  *
