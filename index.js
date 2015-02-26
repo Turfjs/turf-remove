@@ -7,10 +7,10 @@ var featureCollection = require('turf-featurecollection');
  *
  * @module turf/remove
  * @category data
- * @param {FeatureCollection<(Point|LineString|Polygon)>} features a FeatureCollection of any type
+ * @param {FeatureCollection} features set of input features
  * @param {String} property the property to filter
  * @param {String} value the value to filter
- * @return {FeatureCollection<(Point|LineString|Polygon)>} the resulting FeatureCollection without features that match the property-value pair
+ * @return {FeatureCollection} the resulting FeatureCollection without features that match the property-value pair
  * @example
  * var points = {
  *   "type": "FeatureCollection",
